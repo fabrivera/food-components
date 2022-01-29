@@ -1,0 +1,179 @@
+.food-list-card {
+    background-color: #fff;
+    width: 90%;
+    max-width: 420px;
+    margin: 1rem;
+    padding-bottom: .8rem;
+    overflow: hidden;
+    cursor: pointer;
+
+    box-shadow: 5px 5px 10px gray;
+
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.food-list-card .header {
+    position: relative;
+    height: 18rem;
+    margin: .5rem 0;
+}
+.food-list-card figure {
+    width: 43%;
+    height: 100%;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 0 15px 15px 0;
+    -webkit-border-radius: 0 15px 15px 0;
+    -moz-border-radius: 0 15px 15px 0;
+    -ms-border-radius: 0 15px 15px 0;
+    -o-border-radius: 0 15px 15px 0;
+}
+.food-list-card figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.food-list-card .body {
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: .9s;
+    -webkit-transition: .9s;
+    -moz-transition: .9s;
+    -ms-transition: .9s;
+    -o-transition: .9s;
+}
+.food-list-card .body h5 {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-weight: 300;
+    padding: .2rem .8rem;
+    background-color: rgba(172, 255, 46, .7);
+}
+.food-list-card .body.show {
+    left: -100%;
+}
+.food-list-card .body.show .arrow {
+    transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+}
+.food-list-card .arrow-container {
+    height: 100%;
+    width: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.food-list-card .arrow-container .arrow {
+    position: relative;
+    width: 15px;
+    height: 2px;
+    background-color: #000;
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+}
+.food-list-card .arrow-container .arrow::before {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 2px;
+    right: -2px;
+    top: -2px;
+    background-color: #000;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+.food-list-card .arrow-container .arrow::after {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 2px;
+    right: -2px;
+    top: 2px;
+    background-color: #000;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+.food-list-card .body .info {
+    width: 50%;
+    max-height: 100%;
+    padding: 1rem 2rem;
+}
+.food-list-card .body .info p {
+    font-size: .9rem;
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    display:-webkit-box; 
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:10; 
+}
+.food-list-card .footer {
+    width: 100%;
+}
+.food-list-card h1 {
+    padding: .7rem;
+    font-size: 1.6rem;
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;    
+    color: rgb(71, 71, 71);
+}
+.food-list-card .footer h4 {
+    width: 10rem;
+    margin: .8rem auto;
+    padding: .6rem 1.2rem;
+    color: #fff;
+    text-align: center;
+    background-color: orangered;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.food-list-card .footer .price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.food-list-card .footer .price .spawn {
+    width: 10px;
+    height: 3px;
+    margin: 0 .7rem 0 .6rem;
+    background-color: gray;
+}
+.food-list-card .footer .price h2 {
+    text-align: center;
+    font-weight: 400;
+    color: gray;
+}
+.food-list-card .footer .price span {
+    color: rgb(206, 206, 206);
+    padding: .5rem .1rem;
+    font-size: 1.6rem;
+}
+.food-list-card .footer .price span.addColor {
+    color: rgb(190, 178, 0);
+}
